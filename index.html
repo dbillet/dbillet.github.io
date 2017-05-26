@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="waypoints.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+<body>
+<div class="topMenu"><h1>David Billet</h1></div>
+  <div class="left">
+<img src="1.jpg"></img>
+<img src="2.jpg"></img>
+<img src="3.jpg"></img>
+<img src="4.jpg"></img>
+<img src="5.jpg"></img>
+<img src="6.jpg"></img>
+<img src="7.jpg"></img>
+<img src="8.jpg"></img>
+<img src="9.jpg"></img>
+<img src="10.jpg"></img>
+<img src="11.jpg"></img>
+<img src="12.jpg"></img>
+</div>
+
+<div class="right">
+  <img src="13.jpg"></img>
+  <img src="14.jpg"></img>
+  <img src="15.jpg"></img>
+  <img src="16.jpg"></img>
+  <img src="17.jpg"></img>
+  <img src="18.jpg"></img>
+  <img src="19.jpg"></img>
+  <img src="20.jpg"></img>
+  <img src="21.jpg"></img>
+  <img src="22.jpg"></img>
+  <img src="23.jpg"></img>
+</div>
+<div class="bottomMenu"><h1>DAVID BILLET</h1>│<br> &#10547;<a href="mailto:dbillet@mica.edu">Email</a><br>│<br><a href="cheese.html"><span style="font-style:italic;">Cheese Popcorn</span></a><br>│<br><a href="https://www.instagram.com/icy_squid/">@icy_squid</a>
+	<video id="one" playsinline autoplay muted loop>
+	<source src="Billet_Moths.mp4" type="video/webm">
+	<source src="Billet_Moths.mp4" type="video/mp4">
+	</video>
+	<video id="two" playsinline autoplay muted loop>
+	<source src="Billet_Moths.mp4" type="video/webm">
+	<source src="Billet_Moths.mp4" type="video/mp4">
+	</video>
+	<video id="three" playsinline autoplay muted loop>
+	<source src="Billet_Moths.mp4" type="video/webm">
+	<source src="Billet_Moths.mp4" type="video/mp4">
+	</video>
+	<video id="four" playsinline autoplay muted loop>
+	<source src="Billet_Moths.mp4" type="video/webm">
+	<source src="Billet_Moths.mp4" type="video/mp4">
+	</video>
+</div>
+<script>
+$(document).ready(function(){
+     $(window).scroll(function(){
+       $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)');
+    }).scroll();
+});
+</script>
+<script>
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 4000) {
+    $('.bottomMenu').fadeIn();
+  } else {
+    $('.bottomMenu').fadeOut();
+  }
+});
+</script>
+<script>
+$(document).scroll(function() {
+  var y = $(this).scrollBottom();
+  if (y > 4500) {
+    $('.topMenu').fadeIn();
+  } else {
+    $('.topMenu').fadeOut();
+  }
+});
+</script>
+</body>
+</html>
